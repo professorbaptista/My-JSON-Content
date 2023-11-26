@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu JSON na prática</title>
-    <script src="javascript.js"></script>
+    <!-- <script src="javascript.js"></script> -->
 </head>
 <body>
     <hr>
@@ -14,10 +14,10 @@
    
 </body>
  <script>
-const texto = { "name": "José Baptista",  "idade": "48 Anos", 
-"cidade": "Luanda"
+const texto = { "nome": "Nzinga",  "idade": "48 Anos", 
+"cidade": "Talatona"
 }
-const obj = JSON.parse (texto)
+const obj = JSON . parse (texto)
 document.getElementById('id01').innerHTML = obj.nome + "," + obj.idade + "," + obj.cidade 
 
 </script>
