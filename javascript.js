@@ -1,10 +1,8 @@
 
 
-const objecto = {
-    nome: "José Baptista", 
-    idade: "48 Anos", 
-    cidade: "Luanda"
+const objecto = { "name": "José Baptista",  "idade": "48 Anos", 
+    "cidade": "Luanda"
 }
-document.getElementById('id-1').innerHTML = objecto.nome
-document.getElementById('id-1').innerHTML = ojecto.idade
-document.getElementById('id-1').innerHTML = objecto.cidade
+document.getElementById('id-1').innerHTML = objecto.name 
+document.getElementById('id-2').innerHTML = objecto.idade
+document.getElementById('id-3').innerHTML = objecto.cidade
