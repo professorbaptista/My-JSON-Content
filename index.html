@@ -7,18 +7,18 @@
     <script src="javascript.js"></script>
 </head>
 <body>
-    <h1>Acesssando um objecto javaScript</h1>
-    <p>Com este código é possível acessar um objecto javaScript. </p>
-    <p id="id-1"></p>
-    <p id="id-2"></p>
-    <p id="id-3"></p>
+    <hr>
+    <h1>Criando um objecto a partir de uma string JSON</h1>
+    
+    <p id="id01"></p>
+   
 </body>
  <script>
-const objecto = { "name": "José Baptista",  "idade": "48 Anos", 
+const texto = { "name": "José Baptista",  "idade": "48 Anos", 
 "cidade": "Luanda"
 }
-document.getElementById('id-1').innerHTML = objecto.name 
-document.getElementById('id-2').innerHTML = objecto.idade
-document.getElementById('id-3').innerHTML = objecto.cidade
+const obj = JSON.parse (texto)
+document.getElementById('id01').innerHTML = obj.nome + "," + obj.idade + "," + obj.cidade 
+
 </script>
 </html>
