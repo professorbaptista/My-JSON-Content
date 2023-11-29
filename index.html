@@ -10,14 +10,27 @@
     <hr>
     <h1>Criando um objecto a partir de uma string JSON</h1>
     
-    <p id="id01"></p>
+  
+    <hr>
+    <h2>jQuery encontrando elemento HTML por id </h2>
+    <p id="id01">Olá, Mundo!</p>
+    <p id="demons">...</p>
+
    
 </body>
  <script>
+
+$ (document).ready(function() {
+        var meuElemento = $("#id02")
+        $("#demons").text("O texto do paragrafo anterior é: " + meuElemento [0].innerHTML)
+    })
+
+
+
 const texto = { "nome": "Nzinga",  "idade": "48 Anos", 
 "cidade": "Talatona"
 }
-const obj = JSON . parse (texto)
+const obj = JSON. parse (texto)
 document.getElementById('id01').innerHTML = obj.nome + "," + obj.idade + "," + obj.cidade 
 
 </script>
