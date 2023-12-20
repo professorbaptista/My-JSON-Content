@@ -10,7 +10,7 @@
     <hr>
     <h1>Criando um objecto a partir de uma string JSON</h1>
     
-    <p id="id01"></p>
+    <p id="id01">...</p>
    
 </body>
  <script>
@@ -18,7 +18,7 @@ const texto = { "name": "José Baptista",  "idade": "48 Anos",
 "cidade": "Luanda"
 }
 const obj = JSON.parse (texto)
-document.getElementById('id01').innerHTML = obj.nome + "," + obj.idade + "," + obj.cidade 
+document.getElementById('id01').innerHTML = obj.name + "," + obj.idade + "," + obj.cidade 
 
 </script>
 </html>
